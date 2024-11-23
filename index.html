@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <title>Viva Market</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Logo Viva Market" width="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Produtos -->
+    <section id="produtos" class="container my-4">
+        <h2 class="text">Veja nossas ofertas</h2>
+    
+        <div id="produtosCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1: Frutas e Verduras -->
+                <div class="carousel-item active">
+                    <h3 class="text fs-5">Frutas e Verduras</h3> <!-- Subtítulo menor -->
+                    <div class="row gy-4">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/apples.png" class="card-img-top" alt="Maçã">
+                                <div class="card-body">
+                                    <h5 class="card-title">Maçã</h5>
+                                    <p class="card-text">R$ 2,00/unidade</p>
+                                    <button class="btn btn-primary add-to-cart" data-name="Maçã" data-price="2.00">Adicionar à Sacola</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/lettuce.png" class="card-img-top" alt="Alface">
+                                <div class="card-body">
+                                    <h5 class="card-title">Alface</h5>
+                                    <p class="card-text">R$ 1,50/unidade</p>
+                                    <button class="btn btn-primary add-to-cart" data-name="Alface" data-price="1.50">Adicionar à Sacola</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/oranges.png" class="card-img-top" alt="Laranja">
+                                <div class="card-body">
+                                    <h5 class="card-title">Laranja</h5>
+                                    <p class="card-text">R$ 3,00/unidade</p>
+                                    <button class="btn btn-primary add-to-cart" data-name="Laranja" data-price="3.00">Adicionar à Sacola</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Slide 2: Alimentos Não Perecíveis -->
+                <div class="carousel-item">
+                    <h3 class="text fs-5">Alimentos Não Perecíveis</h3> <!-- Subtítulo menor -->
+                    <div class="row gy-4">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/rice.png" class="card-img-top" alt="Arroz">
+                                <div class="card-body">
+                                    <h5 class="card-title">Arroz</h5>
+                                    <p class="card-text">R$ 10,00/pacote</p>
+                                    <button class="btn btn-primary add-to-cart" data-name="Arroz" data-price="10.00">Adicionar à Sacola</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/bean.png" class="card-img-top" alt="Feijão">
+                                <div class="card-body">
+                                    <h5 class="card-title">Feijão</h5>
+                                    <p class="card-text">R$ 7,00/pacote</p>
+                                    <button class="btn btn-primary add-to-cart" data-name="Feijão" data-price="7.00">Adicionar à Sacola</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/pasta.png" class="card-img-top" alt="Macarrão">
+                                <div class="card-body">
+                                    <h5 class="card-title">Macarrão</h5>
+                                    <p class="card-text">R$ 4,50/pacote</p>
+                                    <button class="btn btn-primary add-to-cart" data-name="Macarrão" data-price="4.50">Adicionar à Sacola</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Slide 3: Higiene e Limpeza -->
+                <div class="carousel-item">
+                    <h3 class="text fs-5">Higiene e Limpeza</h3> <!-- Subtítulo menor -->
+                    <div class="row gy-4">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/washing_powder.png" class="card-img-top" alt="Sabão em Pó">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sabão em Pó</h5>
+                                    <p class="card-text">R$ 5,00/pacote</p>
+                                    <button class="btn btn-primary add-to-cart" data-name="Sabão em Pó" data-price="5.00">Adicionar à Sacola</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/detergent.png" class="card-img-top" alt="Detergente">
+                                <div class="card-body">
+                                    <h5 class="card-title">Detergente</h5>
+                                    <p class="card-text">R$ 3,00/unidade</p>
+                                    <button class="btn btn-primary add-to-cart" data-name="Detergente" data-price="3.00">Adicionar à Sacola</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/sponge.png" class="card-img-top" alt="Esponja">
+                                <div class="card-body">
+                                    <h5 class="card-title">Esponja</h5>
+                                    <p class="card-text">R$ 2,50/unidade</p>
+                                    <button class="btn btn-primary add-to-cart" data-name="Esponja" data-price="2.50">Adicionar à Sacola</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Controles do carrossel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#produtosCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#produtosCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </section>
+    
+
+    <!-- Sacola e Agendamento -->
+    <section id="sacola" class="container my-4">
+        <h2 class="text">Sacola</h2>
+        <ul id="cart-list" class="list-group mb-3"></ul>
+        <h3 class="text">Agendamento</h3>
+        <form id="schedule-form">
+            <div class="mb-3">
+                <label for="date" class="form-label">Data da Entrega/Retirada:</label>
+                <input type="date" id="date" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="date" class="form-label">Horário da Entrega/Retirada:</label>
+                <input type="time" id="time" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="delivery" class="form-label">Opção:</label>
+                <select id="delivery" class="form-select" required>
+                    <option value="Entrega">Entrega</Soption>
+                    <option value="Retirada">Retirada no Local</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-success">Confirmar Agendamento</button>
+        </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
